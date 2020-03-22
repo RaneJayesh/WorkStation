@@ -1,3 +1,5 @@
+# Workstation class
+
 import datetime
 from Classes.Developer import Developer
 from Classes.Tester import Tester
@@ -9,9 +11,9 @@ employee3 = Accountant("Dhanashree", "Rane", datetime.datetime(2019, 3, 4), 30_0
 
 employees = [employee1, employee2, employee3]
 
-employee1.PaySalary()
-employee2.PaySalary()
+print("--------------------")
 employee3.PaySalary(employees)
+print("--------------------")
 
 employee1.DoWork()
 employee2.DoWork()
@@ -21,6 +23,10 @@ employee1.SetRaiseAmount(1.30)
 
 employee1.IncrementSalary()
 employee2.IncrementSalary()
+employee3.IncrementSalary()
 
-employee1.PaySalary()
-employee2.PaySalary()
+print("--------------------")
+
+employee3.PaySalary(employees)
+
+print("--------------------")
