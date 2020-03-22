@@ -1,3 +1,5 @@
+
+# Employee base class
 class Employee(object):
 
     RaiseAmount = 1.20
